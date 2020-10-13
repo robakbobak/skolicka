@@ -1,13 +1,5 @@
-<html>
-<head>
 
-    <title>tabulkaa</title>
 
-    <link rel=”stylesheet” href=”style.css”>
-
-</head>
-<body>
-<p style="color: red">edfe</p>
 <?php
 session_start();
 ?>
@@ -65,9 +57,16 @@ $dni = array("Pondelok", "Utorok", "Streda", "Stvrtok", "Pondelok");
 $hodiny = array(0, 1, 2, 3, 4, 5,6,7);
 
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> tabulka</title>
+</head>
+</html>
 
-<table border=1 style="width: 100%;
-	border-collapse: collapse;">
+
+<table border=1 >
     <tr>
         <td>Den</td>
         <? foreach ($hodiny as $i => $hodina): ?>
