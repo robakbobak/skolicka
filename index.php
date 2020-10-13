@@ -3,6 +3,8 @@
 <?php
 session_start();
 ?>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 <?php
 
         if(!empty($_GET["jazyk"])){
@@ -60,13 +62,13 @@ $hodiny = array(0, 1, 2, 3, 4, 5,6,7);
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title> tabulka</title>
 </head>
 </html>
 
 
-<table border=1 >
+<table border=1 class="table">
     <tr>
         <td>Den</td>
         <? foreach ($hodiny as $i => $hodina): ?>
